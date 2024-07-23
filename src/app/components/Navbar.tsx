@@ -10,12 +10,19 @@ export default function Navbar() {
   const [nav, setNav] = useState(false);
 
   useGSAP(() => {
-    gsap.to("#nav", {});
+    gsap.to("#nav", {
+      y: 0,
+      opacity: 1,
+      duration: 1,
+    });
   });
 
   return (
-    <header className="bg-background text-main w-full fixed">
-      <nav className="p-[30px] flex justify-between items-center" id="nav">
+    <header className="bg-background text-main w-full fixed z-10">
+      <nav
+        className="p-[30px] flex justify-between items-center translate-y-[40%] opacity-0"
+        id="nav"
+      >
         <h1 className="font-bold">
           Jason
           <br />
