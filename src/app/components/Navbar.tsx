@@ -13,12 +13,12 @@ export default function Navbar() {
     gsap.to("#nav", {
       y: 0,
       opacity: 1,
-      duration: 1,
+      duration: 0.5,
     });
   });
 
   return (
-    <header className="bg-background text-main w-full fixed z-10">
+    <header className="bg-background text-main w-full fixed">
       <nav
         className="p-[30px] flex justify-between items-center translate-y-[40%] opacity-0"
         id="nav"
