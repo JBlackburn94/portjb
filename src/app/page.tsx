@@ -44,7 +44,7 @@ export default function Home() {
           src={heroImgBg}
           alt="An SVG shape of a flower"
           id="heroSVG"
-          className="opacity-0 translate-x-[100%]"
+          className="opacity-0 translate-x-[100%] relative z-0"
         />
       </div>
       <div className="flex flex-col items-center">
