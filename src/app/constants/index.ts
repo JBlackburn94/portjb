@@ -1,4 +1,4 @@
-export const footerLinks = [
+export const navLinks = [
     {
         id: 1,
         name: "Home",
@@ -6,12 +6,12 @@ export const footerLinks = [
     },
     {
         id: 2,
-        name: "About",
+        name: "Skills",
         href: "/about",
     },
     {
         id: 3,
-        name: "Portfolio",
+        name: "Projects",
         href: "/portfolio",
     },
     {
@@ -19,4 +19,4 @@ export const footerLinks = [
         name: "Contact",
         href: "/contact",
     },
-];
+]

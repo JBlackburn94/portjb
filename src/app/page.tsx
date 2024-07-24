@@ -15,36 +15,36 @@ export default function Home() {
       opacity: 1,
       x: 0,
       rotate: 360,
-      duration: 1,
-      delay: 1,
+      duration: 0.5,
+      delay: 0.5,
     });
     gsap.to("#heroImg", {
       opacity: 1,
-      duration: 1,
-      delay: 1.5,
+      duration: 0.5,
+      delay: 1,
     });
     gsap.to(".content", {
       opacity: 1,
       y: 0,
       duration: 0.5,
-      delay: 2,
+      delay: 1.2,
       stagger: 0.2,
     });
   });
   return (
-    <main className="bg-background overflow-x-hidden h-[100dvh] text-main flex flex-col items-center justify-start gap-[30px] pt-[120px] px-[48px]">
-      <div className="flex items-center justify-center relative">
-        <Image
-          src={heroImg}
-          alt="An image of Jason Blackburn"
-          className="absolute opacity-0 z-10"
-          id="heroImg"
-        />
+    <main className="bg-background overflow-x-hidden h-[100dvh] text-main flex flex-col items-center justify-start gap-[30px] pt-[120px] px-[48px] pb-4">
+      <div className="flex items-center justify-center relative z-0">
         <Image
           src={heroImgBg}
           alt="An SVG shape of a flower"
           id="heroSVG"
-          className="opacity-0 translate-x-[100%]"
+          className="opacity-0 translate-x-[100%] z-10"
+        />
+        <Image
+          src={heroImg}
+          alt="An image of Jason Blackburn"
+          className="absolute opacity-0 z-20"
+          id="heroImg"
         />
       </div>
       <div className="flex flex-col items-center">
