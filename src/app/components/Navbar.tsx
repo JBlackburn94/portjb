@@ -20,7 +20,7 @@ export default function Navbar() {
   return (
     <header className="bg-background text-main w-full fixed">
       <nav
-        className="p-[30px] flex justify-between items-center translate-y-[40%] opacity-0"
+        className="p-[30px] flex justify-between items-center translate-y-[40%] opacity-0 z-40"
         id="nav"
       >
         <h1 className="font-bold">
