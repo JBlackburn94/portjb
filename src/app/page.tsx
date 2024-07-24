@@ -32,8 +32,8 @@ export default function Home() {
     });
   });
   return (
-    <main className="bg-background overflow-x-hidden h-screen text-main flex flex-col items-center justify-start gap-[30px] pt-[120px] px-[48px]">
-      <div className="flex items-center justify-center">
+    <main className="bg-background overflow-x-hidden h-[100dvh] text-main flex flex-col items-center justify-start gap-[30px] pt-[120px] px-[48px]">
+      <div className="flex items-center justify-center relative">
         <Image
           src={heroImg}
           alt="An image of Jason Blackburn"
@@ -44,7 +44,7 @@ export default function Home() {
           src={heroImgBg}
           alt="An SVG shape of a flower"
           id="heroSVG"
-          className="opacity-0 translate-x-[100%] relative z-0"
+          className="opacity-0 translate-x-[100%]"
         />
       </div>
       <div className="flex flex-col items-center">
